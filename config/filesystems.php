@@ -64,6 +64,12 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'warframe' => [
+            'driver' => 'local',
+            'root' => public_path('data'),
+            'url' => public_path('data'),
+        ],
+    
     ],
 
 ];

@@ -10,24 +10,26 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@babel/preset-react": "^7.0.0",
-        "axios": "^0.19",
+        "@babel/preset-react": "^7.10.4",
+        "axios": "^0.19.2",
         "bootstrap": "^4.0.0",
+        "copy-webpack-plugin": "^6.0.3",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.19",
         "popper.js": "^1.12",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.15.2",
+        "sass": "^1.26.10",
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
         "bootstrap-sass": "^3.4.1",
         "immutable": "^4.0.0-rc.12",
-        "jquery": "^3.4.1",
-        "warframe-items": "^1.616.0"
+        "jquery-lazy": "^1.7.11",
+        "react-loader-spinner": "^3.1.14",
+        "warframe-items": "^1.1049.0"
     }
 }

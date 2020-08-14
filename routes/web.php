@@ -19,6 +19,9 @@ Route::get('/items', function () {
     return view('items.list');
 });
 
+Route::get('/list/{filename?}', 'WarframeController@index' )->name( 'warframe.index' );
+
 Route::prefix('api')->group(function () {
+    Route::post('/data', 'WarframeController@api')->name( 'warframe.api' );
     Route::get('/items/{category}', 'itemController@show')->name('api.items.show');
 });

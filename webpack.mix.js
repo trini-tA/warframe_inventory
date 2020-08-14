@@ -11,5 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
+//mix.copyDirectory( 'node_modules/warframe-items/data/json', 'public/data');
+
+
 mix.react('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+   .copyDirectory( 'node_modules/warframe-items/data/json', 'public/data');
+
+
